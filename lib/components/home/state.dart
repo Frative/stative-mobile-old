@@ -25,6 +25,7 @@ class HomePageState extends State<HomePage> {
               height: 24,
               width: 24,
               child: CircleAvatar(
+                backgroundColor: Colors.white,
                 // TODO: Connect with avatar property from User model.
                 backgroundImage: NetworkImage('https://dogecash.net/assets/images/team/infrative.jpg'),
               ),
