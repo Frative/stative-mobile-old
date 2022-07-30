@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'components/home/widget.dart';
+import 'components/index.dart';
 
 void main() {
   runApp(const App());
@@ -25,7 +25,11 @@ class App extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.amber,
       ),
-      home: const HomePage(title: 'Header'),
+      initialRoute: 'preload',
+      routes: {
+        'preload': (context) => const PreloadPage(),
+        'home': (context) => const HomePage(title: 'title')
+      },
     );
   }
 }
