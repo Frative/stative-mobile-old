@@ -16,17 +16,6 @@ class HomePageState extends State<HomePage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
-        title: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: const <Widget>[
-            IconButton(
-                onPressed: null,
-                icon: Icon(
-                  Icons.settings,
-                ),
-            )
-          ],
-        ),
         elevation: 1,
         leading: Row(
           mainAxisSize: MainAxisSize.min,
